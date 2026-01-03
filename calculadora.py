@@ -1,15 +1,15 @@
 import os 
- # A primeira função calcula a área base em metros quadrados
+ # A primeira função calcula a área base em metros quadrados:
 def calcular_area_base(largura, comprimento):
     return largura * comprimento
 
-# A segunda função calcula a quantidade de sacas de sementes necessárias
+# A segunda função calcula a quantidade de sacas de sementes necessárias:
 def calcular_sementes(populacao, germinacao, hectares, sementes_por_saca):
     qtd_total_sementes = ((populacao * 100) / germinacao) * 1.1
     sacas_por_hectare = qtd_total_sementes / sementes_por_saca
     return sacas_por_hectare * hectares
 
- # Função para calcula semente de soja
+ # Função para calcula semente de soja:
 def seedsoja(espacamento, populacao, germinacao, hec):
     espaco_cm = espacamento/100
     hect_metros = hec * 10000
@@ -18,7 +18,7 @@ def seedsoja(espacamento, populacao, germinacao, hec):
     germina = (plantas_metros * 100) / germinacao
     qtd_semente = ((populacao*100)/germinacao)*1.1
     sacas = qtd_semente / 300000
-    sacas02 = hectares02*sacas
+    sacas02 = hect_metros*sacas
     return sacas02  
 
 # Menu principal
@@ -41,7 +41,7 @@ while True:
         comprimento = float(input("Qual o comprimento (m)? "))
         area_m2 = calcular_area_base(largura, comprimento)
         
-        #Os resultados dos calculos de area 
+        #Os resultados dos calculos de area: 
 
         print(f"Hectares: {area_m2/10000:.2f}")
         print(f"Alqueire Paulista: {area_m2/24200:.2f}")
@@ -49,7 +49,7 @@ while True:
         print(f"Alqueire Baiano: {area_m2/96800:.3f}")
 
         input("\nPressione Enter para voltar ao menu...")
-#Caso a opção 2 seja selecionada sera enviada á uma pagina para escolher o tipo de semente
+#Caso a opção 2 seja selecionada sera enviada a uma pagina para escolher o tipo de semente:
     elif opcao == "2":
         print("\n[ CÁLCULO DE SEMENTES ]")
         print("1 - Milho | 2 - Soja")
