@@ -1,4 +1,4 @@
-# calculadora-insumos/MAnual de uso 
+# calculadora-insumos/Manual de uso 
 No dia-a-dia é de grande importância manter seus dados organizados, através do uso da calculadora estas tarefas que demandam tempo e que são feitas manualmente podem acarretar em falhas que prejudica a organização, então, a calculadora busca tornar uma parte massante em algo mais dinâmico e didático ao seu cotidiano. 
 
 A calculadora de insumos desenvolvidada neste trabalho tem como objetivo efetivar calculos dinâmicos dentro da área agricultura, com capacidade e suporte para produção de milho e soja, disponibilidade e quantidade de adubos para ambas monocultura, juntamente com cálculos para para determinação de hectares lineares.
